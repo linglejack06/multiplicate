@@ -12,6 +12,7 @@
 		5C5364932B3F593100873621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C5364922B3F593100873621 /* Assets.xcassets */; };
 		5C5364962B3F593100873621 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C5364952B3F593100873621 /* Preview Assets.xcassets */; };
 		5C53649D2B3F598000873621 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53649C2B3F598000873621 /* Question.swift */; };
+		5CDD96262B4360F900982EF1 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDD96252B4360F900982EF1 /* StartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		5C5364922B3F593100873621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C5364952B3F593100873621 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C53649C2B3F598000873621 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		5CDD96252B4360F900982EF1 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				5C53648E2B3F592F00873621 /* multiplicateApp.swift */,
 				5C5364902B3F592F00873621 /* ContentView.swift */,
+				5CDD96252B4360F900982EF1 /* StartView.swift */,
 				5C53649C2B3F598000873621 /* Question.swift */,
 				5C5364922B3F593100873621 /* Assets.xcassets */,
 				5C5364942B3F593100873621 /* Preview Content */,
@@ -143,6 +146,7 @@
 				5C53649D2B3F598000873621 /* Question.swift in Sources */,
 				5C5364912B3F592F00873621 /* ContentView.swift in Sources */,
 				5C53648F2B3F592F00873621 /* multiplicateApp.swift in Sources */,
+				5CDD96262B4360F900982EF1 /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
