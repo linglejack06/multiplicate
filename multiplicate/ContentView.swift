@@ -12,11 +12,11 @@ struct ContentView: View {
     @State var showingGame = false
     var body: some View {
         NavigationStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            StartView(amtOfQuestions: $amtOfQuestions, showingGame: $showingGame)
+            if (showingGame) {
+                
+            } else {
+                StartView(amtOfQuestions: $amtOfQuestions, showingGame: $showingGame)
+            }
             Text("\(amtOfQuestions)")
             Text("\(showingGame.description)")
         }
