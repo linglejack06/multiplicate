@@ -10,6 +10,7 @@ import SwiftUI
 struct StartView: View {
     var multipliers = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
     @Binding var amtOfQuestions: Int
+    @Binding var multiplier: Int
     @Binding var showingGame: Bool
     var body: some View {
         VStack {
@@ -43,5 +44,6 @@ struct MultiplierRow: View {
 #Preview {
     @State var b = 5
     @State var a = false
-    return StartView(amtOfQuestions: $b, showingGame: $a)
+    @State var multiplier = 1
+    return StartView(amtOfQuestions: $b, multiplier: $multiplier, showingGame: $a)
 }
