@@ -8,15 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var amtOfQuestions = 5
+    @State var showingGame = false
     var body: some View {
         NavigationStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
-            StartView()
+            StartView(amtOfQuestions: $amtOfQuestions, showingGame: $showingGame)
+            Text("\(amtOfQuestions)")
+            Text("\(showingGame.description)")
         }
         .padding()
+        .onChange(of: showingGame) {
+            // generate question array
+        }
     }
 }
 
