@@ -15,7 +15,7 @@ struct StartView: View {
     var body: some View {
         VStack {
             ForEach(0..<multipliers.count, id: \.self) { i in
-                MultiplierRow(multipliersForRow: multipliers[i])
+                MultiplierRow(multipliersForRow: multipliers[i], multiplier: $multiplier)
             }
             Text("Questions to be asked")
             Picker("How Many Questions", selection: $amtOfQuestions) {
@@ -33,10 +33,14 @@ struct StartView: View {
 
 struct MultiplierRow: View {
     var multipliersForRow: [Int]
+    @Binding var multiplier: Int
     var body: some View {
         HStack {
             ForEach(0..<multipliersForRow.count, id: \.self) { num in
-                Text("\(multipliersForRow[num])")
+                Button("\(multipliersForRow[num])") {
+                    multiplier = multipliersForRow[num]
+                }
+                .background(multiplier == multipliersForRow[num] ? .black : .white)
             }
         }
     }
