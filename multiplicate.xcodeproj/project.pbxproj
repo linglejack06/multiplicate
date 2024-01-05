@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C527DB92B48ABA2002AC488 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C527DB82B48ABA2002AC488 /* GameView.swift */; };
 		5C53648F2B3F592F00873621 /* multiplicateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53648E2B3F592F00873621 /* multiplicateApp.swift */; };
 		5C5364912B3F592F00873621 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5364902B3F592F00873621 /* ContentView.swift */; };
 		5C5364932B3F593100873621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C5364922B3F593100873621 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C527DB82B48ABA2002AC488 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		5C53648B2B3F592F00873621 /* multiplicate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multiplicate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C53648E2B3F592F00873621 /* multiplicateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiplicateApp.swift; sourceTree = "<group>"; };
 		5C5364902B3F592F00873621 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				5C53648E2B3F592F00873621 /* multiplicateApp.swift */,
 				5C5364902B3F592F00873621 /* ContentView.swift */,
 				5CDD96252B4360F900982EF1 /* StartView.swift */,
+				5C527DB82B48ABA2002AC488 /* GameView.swift */,
 				5C53649C2B3F598000873621 /* Question.swift */,
 				5C5364922B3F593100873621 /* Assets.xcassets */,
 				5C5364942B3F593100873621 /* Preview Content */,
@@ -147,6 +150,7 @@
 				5C5364912B3F592F00873621 /* ContentView.swift in Sources */,
 				5C53648F2B3F592F00873621 /* multiplicateApp.swift in Sources */,
 				5CDD96262B4360F900982EF1 /* StartView.swift in Sources */,
+				5C527DB92B48ABA2002AC488 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

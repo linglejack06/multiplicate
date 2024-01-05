@@ -12,18 +12,13 @@ struct ContentView: View {
     @State var showingGame = false
     @State var multiplier = 1
     @State var gameQuestions: [Question] = []
+    @State var questionsGenerated = false
     var body: some View {
         NavigationStack {
-            if (showingGame) {
-                
+            if (showingGame && questionsGenerated) {
+                GameView(questions: gameQuestions)
             } else {
                 StartView(amtOfQuestions: $amtOfQuestions, multiplier: $multiplier, showingGame: $showingGame)
-            }
-            // tests
-            Text("\(amtOfQuestions)")
-            Text("\(showingGame.description)")
-            ForEach(0..<gameQuestions.count, id: \.self) { q in
-                Text("\(gameQuestions[q].equationString)")
             }
         }
         .padding()
@@ -35,6 +30,7 @@ struct ContentView: View {
         for _ in 0..<amtOfQuestions {
             gameQuestions.append(Question(equation: [multiplier, Int.random(in: 1...12)]))
         }
+        questionsGenerated = true
     }
 }
 
